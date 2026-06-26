@@ -18,7 +18,7 @@
     }
 </style>
 
-<body class="bg-white min-h-screen flex flex-col">
+<body class="bg-white min-h-screen flex flex-col font-san">
 
     <header class="bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/dillon-kydd-2keCPb73aQY-unsplash.jpg')] 
     bg-cover bg-center pb-16 relative rounded-tl-md flex flex-col justify-between"> 
@@ -28,8 +28,8 @@
 
         <div class="max-w-6xl mx-auto flex items-center justify-between relative">
 
-            <div class="flex items-center">
-                <button type="button" class="inline-flex items-center p-2 text-white rounded-lg lg:hidden focus:outline-none">
+            <div  class="flex items-center">
+                <button id="openMenuBtn" type="button" class="inline-flex items-center p-2 text-white rounded-lg lg:hidden focus:outline-none">
                     <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                     </svg>
@@ -71,6 +71,83 @@
 
         </div>
     </nav>
+
+
+<nav id="mobileMenu" class="hidden lg:hidden min-h-screen w-screen bg-white shadow-xl fixed inset-0 z-50 font-sans">
+  
+  <div class="flex items-center justify-between py-4 px-9 border-b border-gray-200 relative">
+    <button id="closeMenuBtn" class="text-3xl text-[#d4a017] hover:opacity-80 focus:outline-none">
+      &times;
+    </button>
+    <div class="order-2 text-xl md:text-2xl font-bold text-gray-900 text-[0px_2px_20px_rgba(255,255,255,0.5)] whitespace-nowrap text-shadow-xl">
+        <span class="text-[#d4a017]"><a href="./index.html">DV.</span>Homes</a>
+    </div>
+
+    <div class="order-3"></div>
+  </div>
+
+  
+
+  <ul class="flex flex-col m-0 p-0">
+    
+    
+    <li class="flex items-center justify-between h-14 border-b border-gray-200">
+      <span class="flex-grow pl-4 text-gray-800 text-[16px] font-medium cursor-pointer hover:text-[#d4a017]">
+        Buy
+      </span>
+      <button class="w-14 h-full flex items-center justify-center border-l border-gray-200 focus:outline-none" aria-label="Toggle Buy Submenu">
+        <svg class="w-5 h-5 fill-[#d4a017] transition-transform duration-200" viewBox="0 0 24 24">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+        </svg>
+      </button>
+    </li>
+    
+    
+    <li class="flex items-center justify-between h-14 border-b border-gray-200">
+      <span class="flex-grow pl-4 text-gray-800 text-[16px] font-medium cursor-pointer hover:text-[#d4a017]">
+        Rent
+      </span>
+      <button class="w-14 h-full flex items-center justify-center border-l border-gray-200 focus:outline-none">
+        <svg class="w-5 h-5 fill-[#d4a017] transition-transform duration-200" viewBox="0 0 24 24">
+          <path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/>
+        </svg>
+      </button>
+    </li>
+
+    
+    <li class="flex items-center h-14 border-b border-gray-200">
+      <a href="#" class="w-full pl-4 text-gray-800 text-[16px] font-medium hover:bg-gray-50 flex items-center h-full hover:text-[#d4a017]">
+        Get a mortgage
+      </a>
+    </li>
+    
+    
+    <li class="flex items-center h-14 border-b border-gray-200">
+      <a href="#" class="w-full pl-4 text-gray-800 text-[16px] font-medium hover:bg-gray-50 flex items-center h-full hover:text-[#d4a017]">
+        Find an agent
+      </a>
+    </li>
+
+    <li class="flex items-center h-14 border-b border-gray-200">
+      <a href="#" class="w-full pl-4 text-gray-800 text-[16px] font-medium hover:bg-gray-50 flex items-center h-full hover:text-[#d4a017]">
+        Manage rentals
+      </a>
+    </li>
+
+    <li class="flex items-center h-14 border-b border-gray-200">
+      <a href="#" class="w-full pl-4 text-gray-800 text-[16px] font-medium hover:bg-gray-50 flex items-center h-full hover:text-[#d4a017]">
+        Advertise
+      </a>
+    </li>
+
+    <li class="flex items-center h-14 border-b border-gray-200">
+      <a href="#" class="w-full pl-4 text-gray-800 text-[16px] font-medium hover:bg-gray-50 flex items-center h-full hover:text-[#d4a017]">
+        Get help
+      </a>
+    </li>
+
+  </ul>
+</nav>
 
     <div class="relative z-10 flex flex-col items-center md:items-start justify-start text-center px-8 mt-5 md:mt-20 lg:mt-25 mb-auto text-white max-w-6xl mx-auto w-full space-y-1+">
         <h1 class="text-3xl text-shadow-lg md:text-5xl font-bold">Homes. Rentals.</h1>
@@ -358,6 +435,19 @@
 
 
     <script>
+        const mobileMenu = document.getElementById('mobileMenu');
+        const openMenuBtn = document.getElementById('openMenuBtn');
+        const closeMenuBtn = document.getElementById('closeMenuBtn');
+
+        openMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            document.body.classList.remove('overflow-hidden');
+        });
        
     </script>
 
