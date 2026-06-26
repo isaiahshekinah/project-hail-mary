@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DV Homes</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./dist/output.css" rel="stylesheet" />
+</head>
+
+<style>
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    *{
+        outline: 1px solid re;
+    }
+</style>
+
+<body class="bg-white min-h-screen flex flex-col">
+
+    <header class="bg-[linear-gradient(to_bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('/dillon-kydd-2keCPb73aQY-unsplash.jpg')] 
+    bg-cover bg-center pb-16 relative rounded-tl-md flex flex-col justify-between"> 
+
+
+    <nav class="relative z-10 px-4 py-4 md:py-5 lg:bg-white lg:border-b lg:border-gray-200 lg:shadow-lg">
+
+        <div class="max-w-6xl mx-auto flex items-center justify-between relative">
+
+            <div class="flex items-center">
+                <button type="button" class="inline-flex items-center p-2 text-white rounded-lg lg:hidden focus:outline-none">
+                    <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+
+                <ul class="hidden lg:flex items-center gap-6 text-[16px] font-medium whitespace-nowrap">
+                <li class="hover:text-[#d4a017] transition duration-300 ease-in-out"><a href="#">Buy</a></li>
+
+                <li class="hover:text-[#d4a017] transition duration-300 ease-in-out"><a href="#">Rent</a></li>
+
+                <li class="hover:text-[#d4a017] transition duration-300 ease-in-out"><a href="#">Sell</a></li>
+
+                <li class="hover:text-[#d4a017] transition duration-300 ease-in-out"><a href="#">Get mortgage</a></li>
+                <li class="hover:text-[#d4a017] transition duration-300 ease-in-out"><a href="#">Advertise</a></li>
+
+               </ul>
+            </div>
+
+
+             <div class="mb-2 text-white text-2xl md:text-3xl lg:text-[#1f2937]  font-bold text-[0px_2px_20px_rgba(255,255,255,0.5)] whitespace-nowrap text-shadow-xl">
+                <span class="text-[#d4a017] ">DV.</span>Homes
+            </div>
+                
+
+
+             <div class="flex items-center justify-end">
+                <ul class="hidden lg:flex items-center gap-6 text-[16px] font-medium whitespace-nowrap ">
+                    <li class="hover:text-[#d4a017] transition duration-300 ease-in-out"><a href="#">Manage rentals</a></li>
+
+                    <li class="hover:text-[#d4a017] transition duration-300 ease-in-out"><a href="#">Find agent</a></li>
+
+                    <li class="hover:text-[#d4a017] transition duration-300 ease-in-out"><a href="#">Get help</a></li>
+                </ul>
+
+                <a href="#" class="inline-block bg-blue text-[#d4a017] bg-white lg:bg-[#d4a017] hover:bg-[#f5ecd5] lg:text-white px-2 py-[5px]  md:px-4 md:py-[6px] font-medium rounded-lg lg:hover:bg-[#b8860b] transition-all duration-300 lg:mx-4 whitespace-nowrap text-[14px]">Sign Up</a>
+
+             </div>
+
+        </div>
+    </nav>
+
+    <div class="relative z-10 flex flex-col items-center md:items-start justify-start text-center px-8 mt-5 md:mt-20 lg:mt-25 mb-auto text-white max-w-6xl mx-auto w-full space-y-1+">
+        <h1 class="text-3xl text-shadow-lg md:text-5xl font-bold">Homes. Rentals.</h1>
+        <h1 class="text-3xl text-shadow-lg md:text-5xl font-bold">Loans. Agents.</h1>
+
+        <div class="flex items-center justify-between md:w-full w-80 max-w-xl bg-white border border-[#d1d5db] px-3 md:px-5 py-1 md:py-3 shadow-sm mt-6 md:mt-8 rounded-xl focus-within:border-[#d4a017] focus-within:ring-1 focus-within:ring-[#d4a017] hover:border-[#d4a017] transition-all duration-300 ease-in-out">
+
+            <input type="text" placeholder="Enter an address, neighborhood or city"
+            class="w-full placeholder:text-[#6b7b97] placeholder:text-sm md:placeholder:text-[16px] text-black py-3 border-none bg-transparent focus:outline-none"/>
+                  
+             <button class="text-[#374151] hover:text-[#d4a017] hover:scale-90 hover:border-[#d4a017] transition-all duration-300 ease-in-out border border-transparent rounded-lg p-2 md:p-3 cursor-pointer ">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="md:size-7 size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>
+             </button>
+        </div>
+       
+    </div>
+</header>
+
+    <section class="mt-5 md:mt-15 flex flex-col items-center px-4">
+
+        <div class="max-w-6xl w-full flex flex-col md:flex-row items-center justify-between mx-auto md:px-9 gap-6 md:gap-18">
+
+            <div class="flex flex-col items-center md:items-start justify-center text-center md:text-left space-y-3">
+                <h3 class="font-bold text-[18px] md:text-[20px]">Do you need home recommendations?</h3>
+                <p class="text-[15px] md:text-[16px] font-medium ">We can help you find the perfect home</p>
+                <p class="text-gray-800">Sign in for a more personalized experience.</p>
+                <button class="bg-[#d4a017] text-white px-4 py-2 rounded-lg hover:bg-[#b8860b] transition duration-300 ease-in-out cursor-pointer">Sign In</button>
+            </div>
+
+            <div class="border-2 border-gray-200 rounded-2xl shadow-md overflow-hidden max-w-[320px] md:max-w-[464px] hover:-translate-y-1 transition-all duration-300 ease-in-out">
+            <img src="/tazz-anderson-ya9POX9IxVM-unsplash.jpg" alt="Image" class="w-[320px] rounded-lg h-[248px] md:w-[464px] md:h-[360px] object-fill"/>
+            </div>
+        </div>
+        
+    </section>
+
+
+     <section class="mt-5 md:mt-15">
+        <div class="max-w-6xl mx-auto px-9">
+            <div class="mb-4">
+                <h3 class="text-[20px] md:text-[24px] font-bold text-shadow-xl md:text-left text-center">Find homes you can afford</h3>
+                <p class="text-gray-600 text-[14px] md:text-[15px] text-center md:text-left font-medium">Answer a few questions. We'll highlight homes you're likely to qualify for.</p>
+            </div>
+        
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 items-start">
+
+                <!-- <div class="md:col-span-1 bg-gray-100 rounded-2xl border border-gray-200 shadow-sm">
+                </div> -->
+
+
+                <div class="space-y-6 flex flex-col  items-start justify-start text-left md:text-left">
+                    <div class="py-5 px-6 rounded-2xl border border-gray-300 shadow-md space-y-4 w-full max-w-[400px] mx-auto ">
+
+                    <div class=" text-lg md:text-xl font-bold text-gray-900 text-[0px_2px_20px_rgba(255,255,255,0.5)] whitespace-nowrap text-shadow-xl">
+                    <span class="text-[#d4a017]">DV.</span>Homes
+                    </div>
+                   
+                    <div class="grid grid-cols-2 gap-x-4 gap-y-5 text-shadow-xl flex-shrink-0">
+
+                        <div>
+                        <h3 class="font-extrabold text-xl md:text-xl">$ - -</h3>
+                        <p class="text-gray-600 font-medium text-[14px]">Target home price</p>
+                        </div>
+
+                        <div>
+                        <div class="font-extrabold text-xl md:text-xl">$ - -</div>
+                        <div class="text-gray-600 font-medium text-[14px]">Max home price</div>
+                        </div>
+                    </div>
+                 
+                    
+                    <div class="flex items-center justify-between gap-6 text-shadow-xl flex-shrink-0 lg:whitespace-nowrap ">
+                        <div>
+                            <div class="font-bold text-xl md:text-xl"><span class="font-black">$--</span>/mo</div>
+                            <div class="text-gray-600 font-medium text-[14px]">Target payment</div>
+                        </div>
+
+                        <div>
+                            <div class="font-black text-xl md:text-xl">--%</div>
+                            <div class="text-gray-600 font-medium text-[14px]">Your est. rate</div>
+                        </div>
+
+                        <div>
+                            <div class="font-black text-xl md:text-xl">--%</div>
+                            <div class="text-gray-600 font-medium text-[14px]">APR</div>
+                        </div>
+                    </div>
+
+                  </div>  
+                  
+                    <button type="button" class="bg-[#d4a017] w-full max-w-[400px] mx-auto rounded-lg inline-block py-3 text-white font-bold hover:bg-[#b8860b] hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer">
+                        Get BuyAbility
+                    </button>
+                 </div>
+
+
+                <div class="md:col-span-1 lg:col-span-2 flex overflow-x-auto gap-4 snap-x snap-mandatory scrollbar">
+
+                 <div class="flex-shrink-0 w-[320px] md:w-[320px] snap-start bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 shadow-lg group">
+                    <div class="relative h-42 w-full bg-gray-200">
+                        <img src="./amanda-smith-_lfGDMDIJq0-unsplash.jpg" alt="House" class="w-full h-full object-cover group-hover:scale-108 transition duration-300"/>
+                        <span class="absolute top-3 left-3 bg-green-700 text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md">
+                            Within BuyAbility
+                        </span>
+                    </div>
+
+                    <div class="p-4 space-y-3">
+                        <div class="h-4 bg-gray-200 rounded-full w-3/5"></div>
+                        <div class="h-4 bg-gray-200 rounded-full w-5/6"></div>
+                        <div class="h-4 bg-gray-200 rounded-full w-3/4"></div>
+                    </div>
+
+                  </div>
+                 <div class="flex-shrink-0 w-[320px] md:w-[320px] snap-start bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 shadow-lg group">
+                    <div class="relative h-42 w-full bg-gray-200">
+                        <img src="./daria-nepriakhina-LZkbXfzJK4M-unsplash.jpg" alt="House" class="w-full h-full object-fit group-hover:scale-108 transition duration-300"/>
+                        <span class="absolute top-3 left-3 bg-green-700 text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md">
+                            Within BuyAbility
+                        </span>
+                    </div>
+
+                    <div class="p-4 space-y-3">
+                        <div class="h-4 bg-gray-200 rounded-full w-3/5"></div>
+                        <div class="h-4 bg-gray-200 rounded-full w-5/6"></div>
+                        <div class="h-4 bg-gray-200 rounded-full w-3/4"></div>
+                    </div>
+
+                  </div>
+                 <div class="flex-shrink-0 w-[320px] md:w-[320px] snap-start bg-gray-50 rounded-2xl overflow-hidden border border-gray-200 shadow-lg group">
+                    <div class="relative h-42 w-full bg-gray-200">
+                        <img src="./dillon-kydd-2keCPb73aQY-unsplash.jpg" alt="House" class="w-full h-full object-fit group-hover:scale-108 transition duration-300"/>
+                        <span class="absolute top-3 left-3 bg-green-700 text-white text-xs font-semibold px-2 py-1 rounded-md shadow-md">
+                            Within BuyAbility
+                        </span>
+                    </div>
+
+                    <div class="p-4 space-y-3">
+                        <div class="h-4 bg-gray-200 rounded-full w-3/5"></div>
+                        <div class="h-4 bg-gray-200 rounded-full w-5/6"></div>
+                        <div class="h-4 bg-gray-200 rounded-full w-3/4"></div>
+                    </div>
+
+                  </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="bg-gray-50/100 mt-5">
+        <div class="max-w-6xl mx-auto px-9 py-16 bg-gray-50">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-md flex flex-shrink-0 flex-col md:flex-row lg:flex col items-center md:items-start lg:items-center text-center md:text-left lg:text-center gap-6 justify-between min-h-0 lg:min-h-[440px] hover:-translate-y-1 transition duration-300">
+
+                    <div class="flex gap-x-6 flex-col md:flex-row lg:flex-col items-center md:items-start lg:items-center">
+                        <div class="flex-shrink-0 md:h-32 md:w-32 lg:w-36 lg:h-36 w-32 h-24 flex md:items-start items-center md:justify-start justify-center">
+                            <img src="https://www.zillowstatic.com/bedrock/app/uploads/sites/55/2025/04/homepage-spot-agent-lg.webp" alt="Buy a home"
+                            class="h-full object-contain"/>
+
+                        </div>
+
+                        <div class="flex flex-col md:items-start lg:items-center space-y-4 md:space-y-3 lg:space-y-6">
+                            <h3 class="text-2xl font-bold text-gray-900">Buy a home</h3>
+                            <p class="text-md text-gray-900 leading-relaxed md:start lg:text-center">A real estate agent can provide you with a clear breakdown of costs so that you can avoid surprise expenses.</p>
+
+                            <div class="pt-3 w-full text-center md:text-left  lg:text-center whitespace-nowrap">
+                        <a href="#" class="inline-block border border-[#d4a017] font-bold hover:bg-[#d4a017] hover:text-white px-6 py-2.5 rounded-xl text-sm transition duration-200">Find a local agent</a>
+                        </div>
+                        </div>
+                        
+
+                        
+                    </div>
+                    
+                </div>
+
+                 <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-md flex flex-shrink-0 flex-col md:flex-row lg:flex col items-center md:items-start lg:items-center text-center md:text-left lg:text-center gap-6 justify-between min-h-0 lg:min-h-[440px] hover:-translate-y-1 transition duration-300">
+
+                    <div class="flex gap-x-6 flex-col md:flex-row lg:flex-col items-center md:items-start lg:items-center">
+                        <div class="flex-shrink-0 md:h-32 md:w-32 lg:w-36 lg:h-36 w-32 h-24 flex md:items-start items-center md:justify-start justify-center">
+                            <img src="https://www.zillowstatic.com/bedrock/app/uploads/sites/55/2025/04/homepage-spot-rent-lg.webp" alt="Buy a home"
+                            class="h-full object-contain"/>
+
+                        </div>
+
+                        <div class="flex flex-col md:items-start lg:items-center space-y-4 md:space-y-3 lg:space-y-6">
+                            <h3 class="text-2xl font-bold text-gray-900">Rent a home</h3>
+                            <p class="text-md text-gray-900 leading-relaxed md:start lg:text-center">We’re creating a seamless online experience – from shopping on the largest rental network, to applying, to paying rent.</p>
+
+                            <div class="pt-3 w-full text-center md:text-left  lg:text-center whitespace-nowrap">
+                        <a href="#" class="inline-block border border-[#d4a017] font-bold hover:bg-[#d4a017] hover:text-white px-6 py-2.5 rounded-xl text-sm transition duration-200">Find rentals</a>
+                        </div>
+                        </div>
+                        
+
+                        
+                    </div>
+                    
+                </div>
+
+                 <div class="bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-md flex flex-shrink-0 flex-col md:flex-row lg:flex col items-center md:items-start lg:items-center text-center md:text-left lg:text-center gap-6 justify-between min-h-0 lg:min-h-[440px] hover:-translate-y-1 transition duration-300">
+
+                    <div class="flex gap-x-6 flex-col md:flex-row lg:flex-col items-center md:items-start lg:items-center">
+                        <div class="flex-shrink-0 md:h-32 md:w-32 lg:w-36 lg:h-36 w-32 h-24 flex md:items-start items-center md:justify-start justify-center">
+                            <img src="https://www.zillowstatic.com/bedrock/app/uploads/sites/55/2025/04/homepage-spot-sell-lg.webp" alt="Buy a home"
+                            class="h-full object-contain"/>
+
+                        </div>
+
+                        <div class="flex flex-col md:items-start lg:items-center space-y-4 md:space-y-3 lg:space-y-6">
+                            <h3 class="text-2xl font-bold text-gray-900">Sell a home</h3>
+                            <p class="text-md text-gray-900 leading-relaxed md:start lg:text-center">No matter what path you take to sell your home, we can help you navigate a successful sale.</p>
+
+                            <div class="pt-3 w-full text-center md:text-left  lg:text-center whitespace-nowrap">
+                        <a href="#" class="inline-block border border-[#d4a017] font-bold hover:bg-[#d4a017] hover:text-white px-6 py-2.5 rounded-xl text-sm transition duration-200">See your options</a>
+                        </div>
+                        </div>
+                        
+
+                        
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-white shadow-2xl border-t-6 border-gray-100">
+        <div class="flex flex-col gap-9 md:flex-row justify-between max-w-6xl mx-auto py-12 px-9">
+
+            <div class="space-y-4">
+                <div class=" text-xl md:text-2xl font-bold text-gray-900 text-[0px_2px_20px_rgba(255,255,255,0.5)] whitespace-nowrap text-shadow-xl">
+                    <span class="text-[#d4a017]">DV.</span>Homes
+                    </div>
+                <p class="md:max-w-[400px] text-gray-900">Explore a word of premium properties and experience a sewamless home-buying journey with us. From expert guidance to personalized property matches and secure transactions, we've got you covered every step of the way. Thank you for choosing us for your property needs.</p>
+            </div>
+
+            <div class="flex justify-between flex-shrink-0 gap-9">
+
+            <div class="space-y-4">
+                <h3 class="text-xl md:text-2xl font-medium text-[0px_2px_20px_rgba(255,255,255,0.4)]">Company</h3>
+                <ul class="text-gray-900 space-y-2 text-[14px] md:text-[16px]">
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Buy</a></li>
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Sell</a></li>
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Rent</a></li>
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Mortgage</a></li>
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Find Agent</a></li>
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Advertise</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h3 class="text-xl md:text-2xl font-medium">Resources</h3>
+                <ul class="text-gray-900 space-y-2 text-[14px] md:text-[16px] whitespace-nowrap">
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Community</a></li>
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Property Videos</a></li>
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Documentation</a></li>
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Our Certification</a></li>
+                </ul>              
+            </div>
+
+             <div class="space-y-4">
+                <h3 class="text-xl md:text-2xl font-medium">Help</h3>
+                <ul class="text-gray-900 space-y-2 text-[14px] md:text-[16px] whitespace-nowrap">
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Customer Support</a></li>
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Terms & Conditions</a></li>
+                    <li><a href="#" class="hover:border-b-2 border-[#d4a017]">Privacy Policy</a></li>
+                </ul>              
+            </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-6xl mx-auto bg-gray-100 rounded-2xl border-t-3 border-[#d4a017] shadow-sm mb-12">
+        </div>
+
+    </footer>
+
+
+
+    <script>
+       
+    </script>
+
+</body>
+</html>
